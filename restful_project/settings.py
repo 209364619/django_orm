@@ -25,7 +25,7 @@ SECRET_KEY = 'xii3*@(+8ii2287me%(a$%rwqu-h=@#^unht=uif1z$#-bz0wk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'polls',
     'myform',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -81,6 +82,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 
 # Password validation
